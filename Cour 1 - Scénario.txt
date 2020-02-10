@@ -1,0 +1,14 @@
+Correction
+
+Titre : Consultation
+Objectif : Consulter une page lié à une recherche
+Précondition : Avoir l'application installer en local
+Lors de la réalisation d'un diagramme en UML, le fait de comprendre le contexte où se joue le diagramme est essentielle pour son bon fonctionnement.
+
+
+A1 : L'internaute ouvre l'application en cliquant sur l'exécutable de l'application
+A2 : L'application affiche une page d'accueil.
+A3 : L'internaute entre un mot clé dans la barre de recherche.
+A4 : L'application affiche la liste des résultats annoncés avec mot clé.
+A5 : L'internaute choisis dans la liste le lien qui lui correspond.
+A6 : L'application ouvre l'éditeur adéquat pour l'affichage.
