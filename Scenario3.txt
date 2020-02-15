@@ -1,0 +1,16 @@
+Titre: Ajout d'un lien en favoris
+Objectif : Avoir une liste de lien favoris de l'utilisateur
+Précondition :
+	Avoir installé l'application en local
+	Avoir un compte utilisateur
+
+C1 : L'utilisateur exécute l'application.
+C2 : Affichage de l'application.
+C3 : L'utilisateur clique sur "s'authentifier".
+C4 : L'utilisateur se connecte à son compte.
+C5 : L'utilisateur recherche un mot clé dans la barre de recherche
+C6 : l'application affiche une liste de résultat à partir de la recherche
+C7 : l'utilisateur ajoute en favoris le lien qu'il trouve intéressant
+C8 : L'utilisateur ajoute le lien qui l'intérèsse dans ses favoris.
+C9 : L'utilisateur va sur son compte.
+C10 : L'utilisateur ouvre la liste des liens favoris.
