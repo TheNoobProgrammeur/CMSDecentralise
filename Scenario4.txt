@@ -1,8 +1,8 @@
 *Titre : Modifier une page 
 *Objectif : Cas d’utilisation permet à un acteur de modifier une page.
 *Acteur : internaute / éditeur 
-*Précondition :    Application installée en local 
-		   Page modifiable 	
+*Pré-conditions :    Application installée en local 
+		     Page modifiable 	
 *Enchainements :
 		    C1 :  L’acteur exécute le système 	 
     		    C2 : L’acteur remplit le champ de recherche
