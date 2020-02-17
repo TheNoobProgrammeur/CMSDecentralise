@@ -2,13 +2,13 @@
 
 - **Titre**: Accéder à des contenus 
 - **Objectif**: trouver différents types de contenus 
-		- exemple: des sites de vidéos
+	- exemple: des sites de vidéos
 
 **Acteur** : l'utilisateur
 
 **Précondition** :
-	- Avoir installé l'application en local
-	- Avoir un compte utilisateur
+- Avoir installé l'application en local
+- Avoir un compte utilisateur
 
 # Étapes
 
