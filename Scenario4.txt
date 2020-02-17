@@ -8,7 +8,7 @@
 		   Page modifiable 	
 
 *Enchainements :
-		    1 :  L’acteur exécute le système 	 
+		    1 : L’acteur exécute le système 	 
     		    2 : L’acteur remplit le champ de recherche
 		    3 : L’acteur clique sur le bouton ‘chercher’
 		    4 : Le système ouvre une page en locale 
