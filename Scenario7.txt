@@ -1,15 +1,18 @@
-Titre: Accéder à un selecteur de type de contenue
-Objectif: trouver des sites d'un certains type 
-		example: des sites de vidéos
+Titre: Accéder à des contenus 
+Objectif: trouver différents types de contenus 
+		exemple: des sites de vidéos
+
+Acteur : l'utilisateur
 
 Précondition :
 	Avoir installé l'application en local
 	Avoir un compte utilisateur
 
 S1 : l'utilisateur ouvre l'application
-S2 : l'utilisateur rafraichie la liste des sites
-S3 : l'utilisateur accéde à un moteur de recherche spécifique pour l'internet decentralisé
+S2 : l'utilisateur rafraichit la liste des sites
+S3 : l'utilisateur accéde à un moteur de recherche spécifique
 S4 : L'utilisateur fait une recherche pour un type de contenus
+S5 : le système affiche les résultats sous forme de liste
 
 ou 
 
