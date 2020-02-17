@@ -1,7 +1,7 @@
 # Scenario 7 
 
--- **Titre**: Accéder à des contenus 
--- **Objectif**: trouver différents types de contenus 
+- **Titre**: Accéder à des contenus 
+- **Objectif**: trouver différents types de contenus 
 		- exemple: des sites de vidéos
 
 **Acteur** : l'utilisateur
