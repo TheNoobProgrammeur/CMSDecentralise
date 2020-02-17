@@ -6,7 +6,7 @@
 
 **Acteur** : l'utilisateur
 
--- **Précondition** :
+**Précondition** :
 	- Avoir installé l'application en local
 	- Avoir un compte utilisateur
 
