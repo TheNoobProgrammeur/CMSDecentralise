@@ -1,0 +1,14 @@
+Titre: Modifier une configuration
+Objectif: Actualiser et mettre à jour la configuration du logiciel
+
+Acteur : Un utilisateur
+
+Précondition :
+    - Avoir un compte administrateur avec les droits nécessaires.
+    - Un accès à internet.
+
+S1 : L'utilisaeur se connecte au CMS.
+S2 : L'utilisateur navigue dans la barre de configuration ou effectue une recherche.
+S3 : Le système affiche un editeur de texte.
+S4 : L'utilisateur modifie le fichier de configuration dansx l'éditeur de texte.
+S5 : L'utilisateur sauvegarde sa configuration en cliquant sur le bouton de sauvegarde.
