@@ -7,11 +7,24 @@ Précondition :
     - Avoir un compte administrateur avec les droits nécessaires.
     - Un accès à internet.
 
-S1 : L'utilisaeur se connecte au CMS.
-S2 : L'utilisateur navigue dans la barre de configuration ou effectue une recherche.
-S3 : Le système affiche un editeur de texte.
-S4 : L'utilisateur modifie le fichier de configuration dansx l'éditeur de texte.
-S5 : L'utilisateur sauvegarde sa configuration en cliquant sur le bouton de sauvegarde.
-S6 : Le sytème affiche une notification de modification
-S7 : L'utilisateur clique sur la notification
-S8 : Le système deploie la nouvelle version du site en ligne
+
+Intégrateur :
+S1 : L'intégrateur se connecte à l'application.
+S2 : L'application affiche les menus d'administration 
+S3 : L'intégrateur demande à modifier les templates des articles 
+S4 : L'application affiche la liste des templates des articles
+S5 : L'intégrateur sélectionne un template
+S6 : L'application affiche la page d'édition du template
+S7 : L'intégrateur modifie le template.
+S8 : L'intégrateur enregister la modification.
+
+
+Administrateur
+S1 : L'administrateur se connecte à l'application.
+S2 : L'administrateur navigue dans la barre de configuration ou effectue une recherche.
+S3 : L'application affiche un editeur de texte.
+S4 : L'administrateur modifie le fichier de configuration dans l'éditeur de texte.
+S5 : L'administrateur sauvegarde sa configuration en cliquant sur le bouton de sauvegarde.
+S6 : L'application affiche une notification de modification.
+S7 : L'administrateur clique sur la notification.
+S8 : L'application deploie la nouvelle version du site en ligne.
