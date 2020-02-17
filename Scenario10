@@ -12,3 +12,6 @@ S2 : L'utilisateur navigue dans la barre de configuration ou effectue une recher
 S3 : Le système affiche un editeur de texte.
 S4 : L'utilisateur modifie le fichier de configuration dansx l'éditeur de texte.
 S5 : L'utilisateur sauvegarde sa configuration en cliquant sur le bouton de sauvegarde.
+S6 : Le sytème affiche une notification de modification
+S7 : L'utilisateur clique sur la notification
+S8 : Le système deploie la nouvelle version du site en ligne
