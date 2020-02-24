@@ -10,7 +10,7 @@
 | 2     | L'application s'affiche                                       |
 | 3     | L'application affiche le _dashboard_ utilisateur              |
 | 4     | L'utilisateur clique sur «Créer un contenu»                   |
-| 5     | L'application affiche l'écran de sélection du type de patron  |
+| 5     | L'application affiche l'écran de sélection du type de document  |
 | 6     | L'utilisateur sélectionne le type « Document »                |
 | 7     | L'application ouvre l'éditeur permettant d'éditer le document |
 | 8     | L'utilisateur modifie le document                             |
