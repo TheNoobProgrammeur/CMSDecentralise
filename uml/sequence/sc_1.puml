@@ -1,0 +1,23 @@
+@startuml
+
+autonumber
+hide footbox
+title Création d'un article
+
+actor User as U
+participant Application as A
+participant Stockage as B
+
+U -> A ++: Lancer l'application
+U <<- A: Afficher l'interface
+
+
+U -> A: Créer article
+U <<- A: Afficher formulaire de création
+U -> A: Compléter formulaire et valider
+A -> A: Valider les données
+A -> B ++: Insérer les données
+A <- B: OK
+U <<- A: Afficher article
+
+@enduml

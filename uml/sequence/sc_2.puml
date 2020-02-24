@@ -1,0 +1,27 @@
+@startuml
+
+autonumber
+hide footbox
+title Suppression d'un article
+
+
+actor User as U
+participant Application as A
+
+U -> A ++: Demande d'affichage
+U <<- A: Affiche la liste des contenus disponibles
+U -> A: Demande d'accès à un article (Lecture)
+U <<- A: Affiche l'article
+U -> A: Demande d'entrer en mode édition
+A <- A: Vérifie les droits d'accès
+alt autorisation OK
+U <<- A: Affiche l'interface d'édition
+else autorisation DECLINED
+U <<- A: Affiche message d'interdiction
+end
+U -> A: Supprimer un article
+U <<- A: Demande de confirmation
+U -> A: Confirmation
+A -> A: Suppression de l'article
+
+@enduml
