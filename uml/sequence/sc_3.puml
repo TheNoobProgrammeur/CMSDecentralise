@@ -1,22 +1,13 @@
 @startuml
-
-actor User as U
-participant Application as A
-participant Stockage as B
-
-U -> A : Lancer l'application
-U <<- A : Afficher la liste des contenus disponibles
-U -> A: Demande d'affichage d'un contenu particulier
-U <<- A: Afficher le contenu demandé
-U -> A: Demande d'ajout en favoris
-A <<- A: Vérifie si l'élément peut être ajouté aux favoris
-
-alt autorisation OK
-A -> B: Ajout aux favoris
-A <- B: Status ok
-U <- A: Message de confirmation
-
-else autorisation DECLINED
-U <- A: Message d'erreur
-
+autonumber
+actor Utilisateur
+database Application
+Utilisateur -> Application : L'utilisateur clique sur la liste des tÃ¢ches
+Utilisateur -> Application : L'utilisateur clique sur ajouter du contenu
+Application ->> Utilisateur : L'application affiche le type de contenu
+Utilisateur -> Application : L'utilisateur choisis une catÃ©gorie
+Utilisateur -> Application : L'utilisateur choisis le lien vers l'Ã©lÃ©ment Ã  ajouter
+Application -> Application : Validation du lien
+Utilisateur -> Application : L'utilisateur valide en cliquant sur le bouton de confirmation
+Utilisateur -> Application : Affichage de l'ajout du lien
 @enduml

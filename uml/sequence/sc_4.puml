@@ -1,0 +1,22 @@
+@startuml
+
+actor User as U
+participant Application as A
+participant Stockage as B
+
+U -> A : Lancer l'application
+U <<- A : Afficher la liste des contenus disponibles
+U -> A: Demande d'affichage d'un contenu particulier
+U <<- A: Afficher le contenu demandé
+U -> A: Demande d'ajout en favoris
+A <<- A: Vérifie si l'élément peut être ajouté aux favoris
+
+alt autorisation OK
+A -> B: Ajout aux favoris
+A <- B: Status ok
+U <- A: Message de confirmation
+
+else autorisation DECLINED
+U <- A: Message d'erreur
+
+@enduml
