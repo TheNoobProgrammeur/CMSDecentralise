@@ -1,0 +1,97 @@
+@startuml
+
+skinparam shadowing false
+skinparam roundcorner 20
+skinparam BackgroundColor #ffffff
+skinparam ArrowColor #007ac9
+
+skinparam default {
+    FontColor #007ac9
+    FontName Nunito Bold
+    FontSize 12
+    MonospacedFontName Source Code Pro
+}
+
+skinparam Actor {
+    BackgroundColor #ffffff
+    BorderColor #007ac9
+}
+
+skinparam Node {
+    BackgroundColor #ffffff
+    BorderColor #007ac9
+}
+
+skinparam Interface {
+    BackgroundColor #ffffff
+    BorderColor #007ac9
+}
+
+skinparam Usecase {
+    BackgroundColor #ffffff
+    BorderColor #007ac9
+}
+
+skinparam Rectangle {
+    BackgroundColor #ffffff
+    BorderColor #007ac9
+}
+
+skinparam Note {
+    BackgroundColor #dc0451
+    BorderColor #dc0451
+    FontColor #ffffff
+}
+
+skinparam Package {
+    BackgroundColor #ffffff
+    BorderColor #007ac9
+}
+
+skinparam Queue {
+    BackgroundColor #ffffff
+    BorderColor #007ac9
+}
+
+skinparam Database {
+    BackgroundColor #ffffff
+    BorderColor #007ac9
+}
+
+skinparam Participant {
+    BackgroundColor #007ac9
+    BorderColor #007ac9
+    FontColor #ffffff
+    FontStyle bold
+}
+
+skinparam Sequence {
+    LifeLineBorderColor #007ac9
+}
+
+header Conception logicielle - M1 III
+footer Page %page% of %lastpage%
+
+title [SUPPRESSION D'UN DOCUMENT]
+
+autonumber
+actor Utilisateur as U
+participant Application as A
+database Stockage as D
+box "Workflow"
+activate A
+U -> A: Se connecte à l'application
+A ->> U: Authentifie l'utilisateur
+A ->> U: Affiche l'interface 
+end box
+U -> A: Navigue dans l'interface
+U -> A: Sélectionne un document
+U -> A: Clique sur le bouton de suppression
+activate D
+A -> D: Supprime le document
+D -> A: OK
+deactivate D
+A -> U: Actualise l'interface
+
+deactivate A
+@enduml
