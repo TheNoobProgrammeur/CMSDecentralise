@@ -1,0 +1,31 @@
+@startuml
+
+autonumber
+hide footbox
+title Modifier une configuration
+
+
+actor User as U
+participant Application as A
+
+ref over U, A : Connexion
+
+alt If Intégrateur
+A ->> U: Afficher Menu D'administration
+U -> A : Demander à modifier les templates des articles
+A ->> U: Afficher la liste des templates des articles
+U -> A : Sélectionner un template
+A ->> U: Afficher la page d'édition du template
+U -> A : Modifier le template
+U -> A : Enregister la modification
+
+else If Administrateur
+U -> A : Effectuer une recherche 
+A ->> U: Afficher un editeur de texte
+U -> A : Modifier le fichier de configuration
+U -> A : Sauvegarder configuration
+A ->> U: Afficher une notification de modification
+U -> A : Cliquer sur la notification
+A -> A : Deploier la nouvelle version du site en ligne
+
+end 
