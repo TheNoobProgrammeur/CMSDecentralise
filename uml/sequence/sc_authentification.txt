@@ -1,0 +1,14 @@
+@startuml
+
+title Connection
+
+actor User #red 
+participant Application_front
+participant Application_back
+
+User <<- Application_front: Affichage de l'interface d'authentification
+User ->> Application_front: Saisie des identifiants et validation
+Application_front ->> Application_back: Envoie d'une requête pour la verification des données saises par l'utilisateur
+Application_back -> Application_front: Retour le la réponse après vérification
+Application_front -> User: Autorisation de connection et redirection vers la page d'acceuil
+@enduml
