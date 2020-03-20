@@ -28,4 +28,6 @@ A ->> U: Afficher une notification de modification
 U -> A : Cliquer sur la notification
 A -> A : Deploier la nouvelle version du site en ligne
 
+end
+
 @enduml 
