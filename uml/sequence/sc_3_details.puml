@@ -1,0 +1,38 @@
+@startuml
+autonumber
+actor User
+activate UI
+User -> UI : User ask for actions
+note right : We use the bridge pattern
+UI -> Manager : get the action list
+create ActionListView
+UI -> ActionListView
+UI -> ActionListView : show
+ActionListView -> User : expose list
+User -> ActionListView : Select action "Add content"
+ActionListView -> UI : Ask for content addition
+UI -> Manager : Check content addition
+Manager -> Manager : Check add content right
+UI -> ActionListView !! : delete
+note right : A different approach
+create ContentKindList
+Manager -> ContentKindList
+create ContentKindListView
+UI -> ContentKindListView
+UI ->> User : show ContentKindListView
+User -> UI : Select a kind of content
+UI -> ContentKindListView !! : delete
+create FilesViewer
+UI -> FilesViewer
+UI -> User : show FilesViewer
+User -> FilesViewer : select links
+FilesViewer -> UI : check links
+UI -> Manager : check links
+Manager ->> UI : ok
+UI ->> FilesViewer : ok
+FilesViewer -> User : Ask confirmation
+User -> FilesViewer : Confirm
+FilesViewer -> UI : Confirm
+UI -> Manager : addLinks
+UI -> User : show links
+@enduml
